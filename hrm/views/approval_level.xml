@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- ********** View ********** -->
+        <record model="ir.ui.view" id="approval_level_tree_view">
+            <field name="name">approval_level.tree</field>
+            <field name="model">hrm.approval_level</field>
+            <field name="priority" eval="0"/>
+            <field name="arch" type="xml">
+                <tree default_order="approval_level_code asc" class="css_approval_level_code">
+                    <field name="approval_level_code" string=''/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="approval_level_form_view">
+            <field name="name">approval_level.form</field>
+            <field name="model">hrm.approval_level</field>
+            <field name="arch" type="xml">
+                <form string="approval_level Form">
+                    <sheet>
+                        <group>
+                            <field name="approval_level_code"  class=".oe_text_right"/>
+                            <field name ="name"  class=".oe_text_right"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- ********** Action ********** -->
+        <record model="ir.actions.act_window" id="approval_level_list_action">
+            <field name="name">approval_level</field>
+            <field name="res_model">hrm.approval_level</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- **********  Menu **********  -->
+        <menuitem id="approval_level_menu" name="Approval Level" parent="configuration_menu" action="approval_level_list_action"/>
+    </data>
+</openerp>

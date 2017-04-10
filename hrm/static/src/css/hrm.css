@@ -1,0 +1,9 @@
+.css_approval_level_code th[data-id="approval_level_code"]{
+    text-align: left !important;
+    width: 5%;
+}
+
+.css_grade_code th[data-id="grade_code"]{
+    text-align: left !important;
+    width: 5%;
+}

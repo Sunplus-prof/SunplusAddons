@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!--  -->
+        <record id="hrm_grade0" model="hrm.grade">
+            <field name="grade_code">01A</field>
+            <field name="name">实习专员</field>
+        </record>
+        <record id="hrm_grade1" model="hrm.grade">
+            <field name="grade_code">01E</field>
+            <field name="name">实习工程师</field>
+        </record>
+        <record id="hrm_grade2" model="hrm.grade">
+            <field name="grade_code">11A</field>
+            <field name="name">助理专员</field>
+        </record>
+        <record id="hrm_grade3" model="hrm.grade">
+            <field name="grade_code">11E</field>
+            <field name="name">助理工程师</field>
+        </record>
+        <record id="hrm_grade4" model="hrm.grade">
+            <field name="grade_code">20A</field>
+            <field name="name">管理师</field>
+        </record>
+        <record id="hrm_grade5" model="hrm.grade">
+            <field name="grade_code">20E</field>
+            <field name="name">工程师</field>
+        </record>
+        <record id="hrm_grade6" model="hrm.grade">
+            <field name="grade_code">21A</field>
+            <field name="name">资深管理师</field>
+        </record>
+        <record id="hrm_grade7" model="hrm.grade">
+            <field name="grade_code">21E</field>
+            <field name="name">资深工程师</field>
+        </record>
+        <record id="hrm_grade8" model="hrm.grade">
+            <field name="grade_code">22A</field>
+            <field name="name">主任管理师</field>
+        </record>
+        <record id="hrm_grade9" model="hrm.grade">
+            <field name="grade_code">22E</field>
+            <field name="name">主任工程师</field>
+        </record>
+        <record id="hrm_grade10" model="hrm.grade">
+            <field name="grade_code">23A</field>
+            <field name="name">特级管理师</field>
+        </record>
+        <record id="hrm_grade11" model="hrm.grade">
+            <field name="grade_code">23E</field>
+            <field name="name">特级工程师</field>
+        </record>
+        <record id="hrm_grade12" model="hrm.grade">
+            <field name="grade_code">30A</field>
+            <field name="name">资深主任管理师</field>
+        </record>
+        <record id="hrm_grade13" model="hrm.grade">
+            <field name="grade_code">30E</field>
+            <field name="name">资深主任工程师</field>
+        </record>
+        <record id="hrm_grade14" model="hrm.grade">
+            <field name="grade_code">31A</field>
+            <field name="name">资深特级管理师</field>
+        </record>
+        <record id="hrm_grade15" model="hrm.grade">
+            <field name="grade_code">31E</field>
+            <field name="name">资深特级工程师</field>
+        </record>
+        <record id="hrm_grade16" model="hrm.grade">
+            <field name="grade_code">32A</field>
+            <field name="name">首席管理师</field>
+        </record>
+        <record id="hrm_grade17" model="hrm.grade">
+            <field name="grade_code">32E</field>
+            <field name="name">首席工程师</field>
+        </record>
+        <record id="hrm_grade18" model="hrm.grade">
+            <field name="grade_code">40A</field>
+            <field name="name">副总管理师</field>
+        </record>
+        <record id="hrm_grade19" model="hrm.grade">
+            <field name="grade_code">40E</field>
+            <field name="name">副总工程师</field>
+        </record>
+        <record id="hrm_grade20" model="hrm.grade">
+            <field name="grade_code">41A</field>
+            <field name="name">总管理师</field>
+        </record>
+        <record id="hrm_grade21" model="hrm.grade">
+            <field name="grade_code">41E</field>
+            <field name="name">总工程师</field>
+        </record>
+        <record id="hrm_grade22" model="hrm.grade">
+            <field name="grade_code">42A</field>
+            <field name="name">首席总管理师</field>
+        </record>
+        <record id="hrm_grade23" model="hrm.grade">
+            <field name="grade_code">42E</field>
+            <field name="name">首席总工程师</field>
+        </record>
+        <record id="hrm_grade24" model="hrm.grade">
+            <field name="grade_code">60</field>
+            <field name="name">总经理</field>
+        </record>
+<!--     Approval Level -->
+        <record id="hrm_approval_level0" model="hrm.approval_level">
+            <field name="approval_level_code">0</field>
+            <field name="name">董事长</field>
+        </record>
+        <record id="hrm_approval_level1" model="hrm.approval_level">
+            <field name="approval_level_code">1</field>
+            <field name="name">总经理</field>
+        </record>
+        <record id="hrm_approval_level2" model="hrm.approval_level">
+            <field name="approval_level_code">2</field>
+            <field name="name">副总级</field>
+        </record>
+        <record id="hrm_approval_level3" model="hrm.approval_level">
+            <field name="approval_level_code">3</field>
+            <field name="name">处长级</field>
+        </record>
+        <record id="hrm_approval_level4" model="hrm.approval_level">
+            <field name="approval_level_code">4</field>
+            <field name="name">经理级</field>
+        </record>
+        <record id="hrm_approval_level5" model="hrm.approval_level">
+            <field name="approval_level_code">5</field>
+            <field name="name">课组长级</field>
+        </record>
+        <record id="hrm_approval_level6" model="hrm.approval_level">
+            <field name="approval_level_code">6</field>
+            <field name="name">一般员工</field>
+        </record>
+        <record id="hrm_approval_level7" model="hrm.approval_level">
+            <field name="approval_level_code">7</field>
+            <field name="name">技术员、约聘人员</field>
+        </record>
+<!-- **************************************************************************** -->
+        <record id="hr_department0" model="hr.department">
+            <field name="department_code">WC100</field>
+            <field name="name">总经理室</field>
+            <field name="department_level">0</field>
+            <field name="department_eng_name">President office</field>
+        </record>
+
+        <record id="hr_department1" model="hr.department">
+            <field name="department_code">WA110</field>
+            <field name="name">行政服务部</field>
+            <field name="department_level">1</field>
+            <field name="department_eng_name">Administration department</field>
+            <field name="parent_id" ref="hr_department0"/>
+        </record>
+
+        <record id="hr_department2" model="hr.department">
+            <field name="department_code">WE112</field>
+            <field name="name">资讯服务部</field>
+            <field name="department_level">1</field>
+            <field name="department_eng_name">Information Technology Department</field>
+            <field name="parent_id" ref="hr_department0"/>
+        </record>
+
+        <record id="hr_department3" model="hr.department">
+            <field name="department_code">WF001</field>
+            <field name="name">财务室</field>
+            <field name="department_level">1</field>
+            <field name="department_eng_name">Finance department</field>
+            <field name="parent_id" ref="hr_department0"/>
+        </record>
+        <record id="hr_department4" model="hr.department">
+            <field name="department_code">WI001</field>
+            <field name="name">技资室</field>
+            <field name="department_level">1</field>
+            <field name="department_eng_name">hr_department0</field>
+            <field name="parent_id" ref="hr_department0"/>
+        </record>
+
+        <record id="hr_department5" model="hr.department">
+            <field name="department_code">WS400</field>
+            <field name="name">专案处</field>
+            <field name="department_level">1</field>
+            <field name="department_eng_name">Special Project Team</field>
+            <field name="parent_id" ref="hr_department0"/>
+        </record>
+        <record id="hr_department6" model="hr.department">
+            <field name="department_code">WS410</field>
+            <field name="name">专案一部</field>
+            <field name="department_level">2</field>
+            <field name="department_eng_name">Special Project Team1</field>
+            <field name="parent_id" ref="hr_department5"/>
+        </record>
+        <record id="hr_department7" model="hr.department">
+            <field name="department_code">WS420</field>
+            <field name="name">专案二部</field>
+            <field name="department_level">2</field>
+            <field name="department_eng_name">Special Project Team2</field>
+            <field name="parent_id" ref="hr_department5"/>
+        </record>
+
+        <record id="hr_department8" model="hr.department">
+            <field name="department_code">WS600</field>
+            <field name="name">iCatch专案处</field>
+            <field name="department_level">1</field>
+            <field name="parent_id" ref="hr_department0"/>
+        </record>
+
+        <record id="hr_department9" model="hr.department">
+            <field name="department_code">WS610</field>
+            <field name="name">iCatch专案一部</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department8"/>
+        </record>
+
+        <record id="hr_department10" model="hr.department">
+            <field name="department_code">WS620</field>
+            <field name="name">iCatch专案二部</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department8"/>
+        </record>
+
+        <record id="hr_department11" model="hr.department">
+            <field name="department_code">WS630</field>
+            <field name="name">iCatch专案三部</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department8"/>
+        </record>
+
+        <record id="hr_department12" model="hr.department">
+            <field name="department_code">WS100</field>
+            <field name="name">IT系统应用处</field>
+            <field name="department_level">1</field>
+            <field name="department_eng_name">IT System applications section</field>
+            <field name="parent_id" ref="hr_department0"/>
+        </record>
+
+        <record id="hr_department13" model="hr.department">
+            <field name="department_code">WS101</field>
+            <field name="name">IT系统应用处市场部</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department12"/>
+        </record>
+
+        <record id="hr_department14" model="hr.department">
+            <field name="department_code">WS110</field>
+            <field name="name">IT系统应用一部</field>
+            <field name="department_level">2</field>
+            <field name="department_eng_name">IT System applications section Department 1</field>
+            <field name="parent_id" ref="hr_department12"/>
+        </record>
+
+        <record id="hr_department15" model="hr.department">
+            <field name="department_code">WS120</field>
+            <field name="name">IT系统应用二部</field>
+            <field name="department_level">2</field>
+            <field name="department_eng_name">IT System applications section Department 2</field>
+            <field name="parent_id" ref="hr_department12"/>
+        </record>
+
+        <record id="hr_department16" model="hr.department">
+            <field name="department_code">WS160</field>
+            <field name="name">IT系统应用处品保部</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department12"/>
+        </record>
+
+        <record id="hr_department17" model="hr.department">
+            <field name="department_code">WS201</field>
+            <field name="name">HE系统中心</field>
+            <field name="department_level">1</field>
+            <field name="department_eng_name">Home Entertainment Unit1</field>
+            <field name="parent_id" ref="hr_department0"/>
+        </record>
+
+        <record id="hr_department18" model="hr.department">
+            <field name="department_code">WP001</field>
+            <field name="name">事务室</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department17"/>
+        </record>
+
+        <record id="hr_department19" model="hr.department">
+            <field name="department_code">WS208</field>
+            <field name="name">战略统筹处</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department17"/>
+        </record>
+
+        <record id="hr_department20" model="hr.department">
+            <field name="department_code">WS204</field>
+            <field name="name">HE系统二处</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department17"/>
+        </record>
+
+        <record id="hr_department21" model="hr.department">
+            <field name="department_code">WS291</field>
+            <field name="name">HE系统一部</field>
+            <field name="department_level">3</field>
+            <field name="department_eng_name">Home Entertainment Unit 1</field>
+            <field name="parent_id" ref="hr_department20"/>
+        </record>
+
+        <record id="hr_department22" model="hr.department">
+            <field name="department_code">WS293</field>
+            <field name="name">HE系统三部</field>
+            <field name="department_level">3</field>
+            <field name="department_eng_name">Home Entertainment Unit 3</field>
+            <field name="parent_id" ref="hr_department20"/>
+        </record>
+
+        <record id="hr_department23" model="hr.department">
+            <field name="department_code">WS294</field>
+            <field name="name">HE系统四部</field>
+            <field name="department_level">3</field>
+            <field name="department_eng_name">Home Entertainment Unit 4</field>
+            <field name="parent_id" ref="hr_department20"/>
+        </record>
+
+        <record id="hr_department24" model="hr.department">
+            <field name="department_code">WS295</field>
+            <field name="name">HE系统五部</field>
+            <field name="department_level">3</field>
+            <field name="department_eng_name">Home Entertainment Unit 5</field>
+            <field name="parent_id" ref="hr_department20"/>
+        </record>
+
+        <record id="hr_department25" model="hr.department">
+            <field name="department_code">WS203</field>
+            <field name="name">HE系统一处</field>
+            <field name="department_level">2</field>
+            <field name="parent_id" ref="hr_department17"/>
+        </record>
+
+        <record id="hr_department26" model="hr.department">
+            <field name="department_code">WS292</field>
+            <field name="name">HE系统二部</field>
+            <field name="department_level">3</field>
+            <field name="department_eng_name">Home Entertainment Unit 2</field>
+            <field name="parent_id" ref="hr_department25"/>
+        </record>
+
+        <record id="hr_department27" model="hr.department">
+            <field name="department_code">WS296</field>
+            <field name="name">HE系统六部</field>
+            <field name="department_level">3</field>
+            <field name="department_eng_name">Home Entertainment Unit 6</field>
+            <field name="parent_id" ref="hr_department25"/>
+        </record>
+        <record id="hr_department28" model="hr.department">
+            <field name="department_code">WS297</field>
+            <field name="name">HE系统七部</field>
+            <field name="department_level">3</field>
+            <field name="department_eng_name">Home Entertainment Unit 7</field>
+            <field name="parent_id" ref="hr_department25"/>
+        </record>
+        <record id="hr_department29" model="hr.department">
+            <field name="department_code">WS298</field>
+            <field name="name">HE系统八部</field>
+            <field name="department_level">3</field>
+            <field name="department_eng_name">Home Entertainment Unit 8</field>
+            <field name="parent_id" ref="hr_department25"/>
+        </record>
+
+    </data>
+</openerp>

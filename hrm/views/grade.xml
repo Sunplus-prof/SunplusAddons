@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- Grade -->
+        <record model="ir.ui.view" id="grade_tree_view">
+            <field name="name">grade.tree</field>
+            <field name="model">hrm.grade</field>
+            <field name="priority" eval="0"/>
+            <field name="arch" type="xml">
+                <tree default_order="grade_code asc" class="css_grade_code">
+                    <field name="grade_code" string=''/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="grade_form_view">
+            <field name="name">grade.form</field>
+            <field name="model">hrm.grade</field>
+            <field name="arch" type="xml">
+                <form string="Grade Form">
+                    <sheet>
+                        <group>
+                            <field name="grade_code"/>
+                            <field name ="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Gard action windows -->
+        <record model="ir.actions.act_window" id="grade_list_action">
+            <field name="name">grade</field>
+            <field name="res_model">hrm.grade</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem id="grade_menu" name="Grade" parent="configuration_menu" action="grade_list_action"/>
+
+    </data>
+</openerp>

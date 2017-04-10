@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- ********** View ********** -->
+        <!-- Employee tree view -->
+        <record model="ir.ui.view" id="employee_tree_view" >
+            <field name="priority" eval="99"/>
+            <field name="name">hrm.employee.tree</field>
+            <field name="model">hr.employee</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="employee_code"/>
+                    <field name="name"/>
+                    <field name="ext_no"/>
+                    <field name="department_code"/>
+                    <field name="department_name"/>
+                    <field name="eng_name"/>
+                    <field name="notes_id"/>
+                    <field name="sap_emp_code"/>
+                    <field name="birthday"/>
+                    <field name="arrival_date"/>
+                    <field name="quit_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Employee form view -->
+        <record model="ir.ui.view" id="employee_form_view" >
+            <field name="priority" eval="99"/>
+            <field name="name">hrm.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="arch" type="xml">
+                <form string="Employee">
+                    <sheet>
+                        <field name="image_medium" widget='image' class="oe_left oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <div class="oe_right oe_button_box" name="button_box">
+                            <!-- Put here related buttons -->
+                        </div>
+                        <notebook>
+                            <page string="Basic Information">
+                                <group>
+                                    <!--<group string="Contact Information">-->
+                                    <group>
+                                        <field name="employee_code"/>
+                                        <field name="department_id" string="Department" options="{'no_quick_create':True, 'no_create_edit':True, 'no_create':True, 'no_open':True}"/>
+                                        <field name="ext_no"/>
+                                    </group>
+                                    <!--<group string="Position">-->
+                                    <group>
+                                        <field name="notes_id"/>
+                                        <field name="eng_name"/>
+                                        <field name="gender"/>
+                                        <field name="work_email" widget="email"/>
+                                    </group>
+
+                                </group>
+                                <field name="notes" placeholder="Other Information ..." colspan="4"/>
+                            </page>
+
+                            <page string="Advance Information">
+                                <group>
+                                    <group>
+                                        <field name="approval_level_id"
+                                               options="{'no_quick_create':True, 'no_create_edit':True, 'no_create':True, 'no_open':True}"/>
+                                        <field name="arrival_date"/>
+                                        <field name="quit_date"/>
+                                        <field name="identification_id"/>
+                                        <field name="birthday"/>
+                                        <field name="blood_type"/>
+                                    </group>
+                                    <group>
+                                        <field name="grade_id"
+                                               options="{'no_quick_create':True, 'no_create_edit':True, 'no_create':True, 'no_open':True}"/>
+                                        <field name="sap_emp_code"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Contact Information">
+                                <group>
+                                    <group>
+                                        <field name="marital"/>
+                                    </group>
+                                    <group>
+                                    </group>
+                                </group>
+                            </page>
+
+                            <page string="BPM Settings">
+                                <group>
+                                    <group>
+                                        <field name="job_agent_id" options="{'no_quick_create':True, 'no_create_edit':True, 'no_create':True, 'no_open':True}"/>
+                                        <field name="approval_agent_id" options="{'no_quick_create':True, 'no_create_edit':True, 'no_create':True, 'no_open':True}"/>
+                                        <field name="parent_id" options="{'no_quick_create':True, 'no_create_edit':True, 'no_create':True, 'no_open':True}"/>
+                                    </group>
+                                    <group>
+                                        <field name="approval_agent_mode"/>
+                                        <field name="approval_agent_status"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Employee Searche view -->
+        <record model="ir.ui.view" id="employee_tree_view" >
+            <field name="priority" eval="99"/>
+            <field name="name">hrm.employee.tree</field>
+            <field name="model">hr.employee</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="employee_code"/>
+                    <field name="name"/>
+                    <field name="department_code"/>
+                    <field name="department_name"/>
+                    <field name="notes_id"/>
+                    <field name="sap_emp_code"/>
+
+                </search>
+            </field>
+        </record>
+
+
+        <!-- ********** Action ********** -->
+        <!--Employee action window -->
+        <record model="ir.actions.act_window" id="employee_list_action">
+            <field name="name">Employee</field>
+            <field name="res_model">hr.employee</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--Employee action window for tree-->
+        <record model="ir.actions.act_window.view" id="employee_list_action_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="employee_tree_view"/>
+            <field name="act_window_id" ref="employee_list_action"/>
+        </record>
+
+        <!--Employee action window for form-->
+        <record model="ir.actions.act_window.view" id="employee_list_action_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="employee_form_view"/>
+            <field name="act_window_id" ref="employee_list_action"/>
+        </record>
+
+        <!-- **********  Menu **********  -->
+        <menuitem id="employee_menu" name="Employee" parent="hrm_menu" action="employee_list_action"/>
+
+
+    </data>
+</openerp>

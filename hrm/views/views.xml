@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- ********** View ********** -->
+
+        <!-- ********** Action ********** -->
+
+        <!-- **********  Menu **********  -->
+
+        <!-- HRM Menu -->
+        <menuitem id="main_hrm_menu" name="Human Resource Management"/>
+        <menuitem id="hrm_menu" name="HRM" parent="main_hrm_menu"/>
+
+        <!-- Configuration Menu -->
+        <menuitem id="configuration_menu" name="Configuration" parent="main_hrm_menu"/>
+
+        <template id="custom_css" name="My custom CSS"  inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/hrm/static/src/css/hrm.css"/>
+            </xpath>
+        </template>
+<!--
+        <template id="custom_tree_view" name="My custom tree view" inherit_id="template">
+            <xpath expr="//td[@t-att-title='column.help']" position="replace">
+                <td t-if="!column.meta and column.invisible !== '1'" t-att-title="column.help"
+                    t-attf-class="oe_list_field_cell oe_list_field_#{column.widget or column.type} #{column.tag === 'button' ? 'oe-button' : ''} #{modifiers.readonly ? 'oe_readonly' : ''} #{modifiers.required ? 'oe_required' : ''}"
+                    t-att-data-field="column.id">
+                    <t t-raw="render_cell(record, column)"/>
+                </td>
+            </xpath>
+        </template>
+-->
+
+    </data>
+</openerp>
